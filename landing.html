@@ -1,0 +1,24 @@
+{% extends 'navbar.html' %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jobs</title>
+</head>
+<body>
+    <h1 style="color: rgb(76, 0, 255)">lets find a Job!</h1>
+    <ul>
+        {% for job in jobs %}
+            <li>
+                <h2>{{ job.title }}</h2>
+                <p> category: {{  job.category }} </p>
+                <p> created_at: {{ job.created_at }} </p>
+                <p> employer: {{ job.employer }} </p>
+                <p> location: {{ job.location }}</p>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
