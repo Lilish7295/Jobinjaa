@@ -148,7 +148,7 @@ class JobSeeker(models.Model):
     )
 
     name = models.CharField(max_length = 200)
-    email_adress = models.CharField(max_length=300)
+    email_adress = models.EmailField()
     phone_number = models.CharField(max_length=12)
     birthday = models.DateField()
     gender = models.CharField(max_length=10, choices = GENDER_CHOICES)
