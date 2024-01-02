@@ -22,10 +22,13 @@
           </li>
           <li class="nav-item">
             <select>
-              <option>Province</option>
-              <option>Province</option>
+              <option>
+                <a class="nav-link" href="province">province</a>
+              </option>
               {% for item in provinces %}
-              <option>{{item.name}}</option>
+              <tr>
+                <option>{{item.name}}</option>
+              </tr>
               {% endfor %}
             </select>
           </li>
@@ -34,7 +37,7 @@
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="about us" aria-expanded="false">
-              Dropdown link
+              Register an ad
             </a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="#">Action</a></li>

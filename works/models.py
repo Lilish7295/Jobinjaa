@@ -54,7 +54,7 @@ class Provinces(models.Model):
         ('Khorasan Jonoubi', 'Khorasan Jonoubi'),
         ('Khorestan Shomali', 'Khorestan Shomali'),
         ('Lorestan', 'Lorestan')
-     )
+    )
     name = models.CharField(max_length=30 , choices = PROVINCES_CHOICES)
 
     def __str__(self):
