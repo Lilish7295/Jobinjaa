@@ -18,13 +18,19 @@
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="home">Home</a>
+            <a class="nav-link active" aria-current="page" href="">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="jobs">jobs</a>
+            <select>
+              <option>Province</option>
+              <option>Province</option>
+              {% for item in provinces %}
+              <option>{{item.name}}</option>
+              {% endfor %}
+            </select>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">50 best companies</a>
+            <a class="nav-link" href="category">category</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="about us" aria-expanded="false">
