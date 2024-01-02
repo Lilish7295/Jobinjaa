@@ -5,7 +5,7 @@ app_name = 'works'
 
 urlpatterns = [
     path('', landing , name='jobs'),
-    path('details/' , detail , name='details'),
+    path("<str:id>" , detail , name='details'),
 
     
 ]
