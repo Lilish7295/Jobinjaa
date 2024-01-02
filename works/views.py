@@ -11,9 +11,6 @@ def landing(request):
     return render(request, 'works/landing.html', context=f_list)
 
 
-def home(request):
-    return render(request, "home.html")
-
 
 def detail(request, job_name):
     if request.method == 'GET':
