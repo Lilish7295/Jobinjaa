@@ -3,6 +3,7 @@ from works.models import Job,JobSeeker,Company,Provinces,Category
 from django.shortcuts import render
 
 
+
 def landing(request):
     jobs = Job.objects.all() 
     f_list= {
@@ -24,8 +25,9 @@ def detail(request,id):
         return render(request, 'works/detail.html', context=j_list)
     
 
-def provinceview(request):
-    provinces = Provinces.objects.all() 
-    return provinces
+def province_view(request):
+    
+    provinces = Provinces.objects.all()
 
+    return render(request, 'works/navbar.html', {'provinces': provinces})
 

@@ -3,5 +3,5 @@ from .views import OTPView, LoginView
 
 urlpatterns = [
     path('generate-otp', OTPView.as_view(), name='generate-otp'),
-    path('login', LoginView.as_view(), name='login'),
+    path('auth/', LoginView.as_view(), name='login'),
 ]
